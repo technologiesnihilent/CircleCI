@@ -8,26 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		28B6F2305A8D6FC99C173A0B /* Pods_CircleCI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA17E52DC7015F778F8ED26D /* Pods_CircleCI.framework */; };
-		6B3A5E78BBCE65286B42E777 /* Pods_CircleCIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E5F7661ADD5091649648D6B /* Pods_CircleCIUITests.framework */; };
 		840DA09F1F7A7C44002A73D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DA09E1F7A7C44002A73D4 /* AppDelegate.swift */; };
 		840DA0A11F7A7C44002A73D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DA0A01F7A7C44002A73D4 /* ViewController.swift */; };
 		840DA0A41F7A7C44002A73D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840DA0A21F7A7C44002A73D4 /* Main.storyboard */; };
 		840DA0A61F7A7C44002A73D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840DA0A51F7A7C44002A73D4 /* Assets.xcassets */; };
 		840DA0A91F7A7C44002A73D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840DA0A71F7A7C44002A73D4 /* LaunchScreen.storyboard */; };
 		840DA0B41F7A7C44002A73D4 /* CircleCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DA0B31F7A7C44002A73D4 /* CircleCITests.swift */; };
-		840DA0BF1F7A7C44002A73D4 /* CircleCIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DA0BE1F7A7C44002A73D4 /* CircleCIUITests.swift */; };
+		840DA0CE1F7AA631002A73D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 840DA0B51F7A7C44002A73D4 /* Info.plist */; };
 		EDF19ED702BE9B40E42CBCFD /* Pods_CircleCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E71E514BEB193CA0E2ABEB /* Pods_CircleCITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		840DA0B01F7A7C44002A73D4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 840DA0931F7A7C44002A73D4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 840DA09A1F7A7C44002A73D4;
-			remoteInfo = CircleCI;
-		};
-		840DA0BB1F7A7C44002A73D4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 840DA0931F7A7C44002A73D4 /* Project object */;
 			proxyType = 1;
@@ -53,7 +45,6 @@
 		840DA0AF1F7A7C44002A73D4 /* CircleCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840DA0B31F7A7C44002A73D4 /* CircleCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCITests.swift; sourceTree = "<group>"; };
 		840DA0B51F7A7C44002A73D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		840DA0BA1F7A7C44002A73D4 /* CircleCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840DA0BE1F7A7C44002A73D4 /* CircleCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCIUITests.swift; sourceTree = "<group>"; };
 		840DA0C01F7A7C44002A73D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840DA0CC1F7A7CA6002A73D4 /* circle.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = circle.yml; sourceTree = "<group>"; };
@@ -77,14 +68,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDF19ED702BE9B40E42CBCFD /* Pods_CircleCITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		840DA0B71F7A7C44002A73D4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B3A5E78BBCE65286B42E777 /* Pods_CircleCIUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +106,6 @@
 			children = (
 				840DA09B1F7A7C44002A73D4 /* CircleCI.app */,
 				840DA0AF1F7A7C44002A73D4 /* CircleCITests.xctest */,
-				840DA0BA1F7A7C44002A73D4 /* CircleCIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,27 +195,6 @@
 			productReference = 840DA0AF1F7A7C44002A73D4 /* CircleCITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		840DA0B91F7A7C44002A73D4 /* CircleCIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 840DA0C91F7A7C44002A73D4 /* Build configuration list for PBXNativeTarget "CircleCIUITests" */;
-			buildPhases = (
-				400F614C3A4DE644113DAE58 /* [CP] Check Pods Manifest.lock */,
-				840DA0B61F7A7C44002A73D4 /* Sources */,
-				840DA0B71F7A7C44002A73D4 /* Frameworks */,
-				840DA0B81F7A7C44002A73D4 /* Resources */,
-				999FB3070A6C067DC6E61A89 /* [CP] Embed Pods Frameworks */,
-				5FA9F7BB242802ACBCB81E29 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				840DA0BC1F7A7C44002A73D4 /* PBXTargetDependency */,
-			);
-			name = CircleCIUITests;
-			productName = CircleCIUITests;
-			productReference = 840DA0BA1F7A7C44002A73D4 /* CircleCIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,12 +211,7 @@
 					};
 					840DA0AE1F7A7C44002A73D4 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 840DA09A1F7A7C44002A73D4;
-					};
-					840DA0B91F7A7C44002A73D4 = {
-						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = 840DA09A1F7A7C44002A73D4;
 					};
 				};
@@ -275,7 +231,6 @@
 			targets = (
 				840DA09A1F7A7C44002A73D4 /* CircleCI */,
 				840DA0AE1F7A7C44002A73D4 /* CircleCITests */,
-				840DA0B91F7A7C44002A73D4 /* CircleCIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -295,13 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		840DA0B81F7A7C44002A73D4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				840DA0CE1F7AA631002A73D4 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,39 +290,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleCI/Pods-CircleCI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		400F614C3A4DE644113DAE58 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CircleCIUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5FA9F7BB242802ACBCB81E29 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleCIUITests/Pods-CircleCIUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8016745324E8686165BEE8C9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,21 +303,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleCITests/Pods-CircleCITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		999FB3070A6C067DC6E61A89 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircleCIUITests/Pods-CircleCIUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9AC4D2B04F779DF32E96BD2D /* [CP] Embed Pods Frameworks */ = {
@@ -472,14 +373,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		840DA0B61F7A7C44002A73D4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				840DA0BF1F7A7C44002A73D4 /* CircleCIUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -487,11 +380,6 @@
 			isa = PBXTargetDependency;
 			target = 840DA09A1F7A7C44002A73D4 /* CircleCI */;
 			targetProxy = 840DA0B01F7A7C44002A73D4 /* PBXContainerItemProxy */;
-		};
-		840DA0BC1F7A7C44002A73D4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 840DA09A1F7A7C44002A73D4 /* CircleCI */;
-			targetProxy = 840DA0BB1F7A7C44002A73D4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -563,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -614,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -667,12 +555,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = U98KTBTAC9;
 				INFOPLIST_FILE = CircleCITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nihilent.CircleCITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleCI.app/CircleCI";
@@ -685,49 +574,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = U98KTBTAC9;
 				INFOPLIST_FILE = CircleCITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nihilent.CircleCITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CircleCI.app/CircleCI";
-			};
-			name = Release;
-		};
-		840DA0CA1F7A7C44002A73D4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E9C61DE51A7EF9EF78D2C37 /* Pods-CircleCIUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U98KTBTAC9;
-				INFOPLIST_FILE = CircleCIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nihilent.CircleCIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CircleCI;
-			};
-			name = Debug;
-		};
-		840DA0CB1F7A7C44002A73D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A1156C4935300E1044D8D26 /* Pods-CircleCIUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U98KTBTAC9;
-				INFOPLIST_FILE = CircleCIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nihilent.CircleCIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CircleCI;
 			};
 			name = Release;
 		};
@@ -757,15 +614,6 @@
 			buildConfigurations = (
 				840DA0C71F7A7C44002A73D4 /* Debug */,
 				840DA0C81F7A7C44002A73D4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		840DA0C91F7A7C44002A73D4 /* Build configuration list for PBXNativeTarget "CircleCIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				840DA0CA1F7A7C44002A73D4 /* Debug */,
-				840DA0CB1F7A7C44002A73D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
