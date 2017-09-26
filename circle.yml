@@ -8,8 +8,8 @@ machine:
 test:
     override:
       xcodebuild \
-#      -workspace CircleCI.xcworkspace \
-#      -scheme CircleCI \
+      -workspace CircleCI.xcworkspace \
+      -scheme CircleCI \
       -sdk iphonesimulator \
       -destination 'platform=iOS Simulator,name=iPhone 6,OS=10' \
       test
