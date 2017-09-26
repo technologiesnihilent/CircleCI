@@ -47,6 +47,7 @@
 		840DA0BA1F7A7C44002A73D4 /* CircleCIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleCIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		840DA0BE1F7A7C44002A73D4 /* CircleCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCIUITests.swift; sourceTree = "<group>"; };
 		840DA0C01F7A7C44002A73D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		840DA0CC1F7A7CA6002A73D4 /* circle.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = circle.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		840DA0921F7A7C44002A73D4 = {
 			isa = PBXGroup;
 			children = (
+				840DA0CC1F7A7CA6002A73D4 /* circle.yml */,
 				840DA09D1F7A7C44002A73D4 /* CircleCI */,
 				840DA0B21F7A7C44002A73D4 /* CircleCITests */,
 				840DA0BD1F7A7C44002A73D4 /* CircleCIUITests */,
@@ -427,14 +429,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = U98KTBTAC9;
 				INFOPLIST_FILE = CircleCI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nihilent.CircleCI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nihilent.Wildcard.CircleCI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "0b88abd4-5eee-4759-a21a-e17ad83f122f";
+				PROVISIONING_PROFILE_SPECIFIER = WildCard_dev;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -442,15 +446,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = U98KTBTAC9;
 				INFOPLIST_FILE = CircleCI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.nihilent.CircleCI;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nihilent.Wildcard.CircleCI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "bc75b424-ec3c-4c63-945a-395d7d376128";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dist;
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
