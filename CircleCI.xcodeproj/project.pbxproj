@@ -57,6 +57,7 @@
 		840DA0BE1F7A7C44002A73D4 /* CircleCIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCIUITests.swift; sourceTree = "<group>"; };
 		840DA0C01F7A7C44002A73D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840DA0CC1F7A7CA6002A73D4 /* circle.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = circle.yml; sourceTree = "<group>"; };
+		840DA0CD1F7A8850002A73D4 /* analyze.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = analyze.sh; sourceTree = "<group>"; };
 		8A1156C4935300E1044D8D26 /* Pods-CircleCIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCIUITests/Pods-CircleCIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		96E71E514BEB193CA0E2ABEB /* Pods_CircleCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA17E52DC7015F778F8ED26D /* Pods_CircleCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +107,7 @@
 		840DA0921F7A7C44002A73D4 = {
 			isa = PBXGroup;
 			children = (
+				840DA0CD1F7A8850002A73D4 /* analyze.sh */,
 				840DA0CC1F7A7CA6002A73D4 /* circle.yml */,
 				840DA09D1F7A7C44002A73D4 /* CircleCI */,
 				840DA0B21F7A7C44002A73D4 /* CircleCITests */,
