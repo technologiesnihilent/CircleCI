@@ -29,11 +29,11 @@ KEYCHAIN_PASSWORD=circleci
 # create ios-build.keychain with $KEYCHAIN_PASSWORD
 security create-keychain -p $KEYCHAIN_PASSWORD ios-build.keychain
 # import Apple Worldwide Developer Relations Certification Authority to ios-build.keychain
-security import ./scripts/CircleCI/apple.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
+security import ./apple.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
 # import iOS distribution certificate to ios-build.keychain
-security import ./scripts/CircleCI/dist.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
+security import ./dist.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
 # import iOS distribution private key to ios-build.keychain
-security import ./scripts/CircleCI/dist.p12 -k ~/Library/Keychains/ios-build.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
+security import ./dist.p12 -k ~/Library/Keychains/ios-build.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
 # load the keychain
 security list-keychain -s ~/Library/Keychains/ios-build.keychain
 # unlock keychain with $KEYCHAIN_PASSWORD
