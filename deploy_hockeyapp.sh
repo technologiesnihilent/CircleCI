@@ -55,7 +55,7 @@ fi
 curl --verbose \
      --fail \
      --form "status=2" \
-     --form "notify=1" \
+     --form "notify=${CURL_NOTIFY}" \
      --form "notes=${HOCKEYAPP_NOTES}" \
      --form "notes_type=1" \
      --form "ipa=@${HOCKEYAPP_EXPORT_IPA_PATH}" \

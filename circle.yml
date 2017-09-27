@@ -26,8 +26,5 @@ deployment:
   hockey:
     branch: [dev, master]
     commands:
-      - ./install_certificates_and_profiles.sh
-      - xcodebuild archive -workspace CircleCI.xcworkspace -scheme CircleCI -archivePath CircleCI.xcarchive
-      - xcodebuild -exportArchive -archivePath CircleCI.xcarchive -exportPath ./ -exportFormat ipa -exportProvisioningProfile "Wildcard_Dist.mobileprovision"
-      - ./remove_certificates_and_profiles.sh
+      - gym
       - ./deploy_hockeyapp.sh
