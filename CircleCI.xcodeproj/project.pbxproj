@@ -15,6 +15,8 @@
 		840DA0A91F7A7C44002A73D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840DA0A71F7A7C44002A73D4 /* LaunchScreen.storyboard */; };
 		840DA0B41F7A7C44002A73D4 /* CircleCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840DA0B31F7A7C44002A73D4 /* CircleCITests.swift */; };
 		840DA0CE1F7AA631002A73D4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 840DA0B51F7A7C44002A73D4 /* Info.plist */; };
+		846CE7B01F7B8FF800C3B028 /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 846CE7AF1F7B8FF800C3B028 /* exportOptions.plist */; };
+		846CE7B11F7B8FF800C3B028 /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 846CE7AF1F7B8FF800C3B028 /* exportOptions.plist */; };
 		EDF19ED702BE9B40E42CBCFD /* Pods_CircleCITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E71E514BEB193CA0E2ABEB /* Pods_CircleCITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,7 @@
 		846CE7AB1F7B6F7400C3B028 /* dist.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = dist.cer; sourceTree = "<group>"; };
 		846CE7AC1F7B6F7500C3B028 /* dist.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dist.p12; sourceTree = "<group>"; };
 		846CE7AE1F7B718300C3B028 /* Wildcard_Dist.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wildcard_Dist.mobileprovision; sourceTree = "<group>"; };
+		846CE7AF1F7B8FF800C3B028 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
 		8A1156C4935300E1044D8D26 /* Pods-CircleCIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCIUITests/Pods-CircleCIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		96E71E514BEB193CA0E2ABEB /* Pods_CircleCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA17E52DC7015F778F8ED26D /* Pods_CircleCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +109,7 @@
 				846CE7AA1F7B6F7400C3B028 /* apple.cer */,
 				846CE7AB1F7B6F7400C3B028 /* dist.cer */,
 				846CE7AC1F7B6F7500C3B028 /* dist.p12 */,
+				846CE7AF1F7B8FF800C3B028 /* exportOptions.plist */,
 				840DA09D1F7A7C44002A73D4 /* CircleCI */,
 				840DA0B21F7A7C44002A73D4 /* CircleCITests */,
 				840DA0BD1F7A7C44002A73D4 /* CircleCIUITests */,
@@ -265,6 +269,7 @@
 				840DA0A91F7A7C44002A73D4 /* LaunchScreen.storyboard in Resources */,
 				840DA0A61F7A7C44002A73D4 /* Assets.xcassets in Resources */,
 				840DA0A41F7A7C44002A73D4 /* Main.storyboard in Resources */,
+				846CE7B01F7B8FF800C3B028 /* exportOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840DA0CE1F7AA631002A73D4 /* Info.plist in Resources */,
+				846CE7B11F7B8FF800C3B028 /* exportOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
