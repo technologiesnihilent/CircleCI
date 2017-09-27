@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>provisioningProfiles</key>
-	<string>Wildcard_Dist.mobileprovision</string>
+	<string>Wildcard_Dist</string>
 	<key>method</key>
 	<string>ad-hoc</string>
 </dict>
