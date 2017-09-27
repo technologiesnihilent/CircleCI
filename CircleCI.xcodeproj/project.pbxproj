@@ -52,6 +52,9 @@
 		846CE7A71F7B677900C3B028 /* install_certificates_and_profiles.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = install_certificates_and_profiles.sh; sourceTree = "<group>"; };
 		846CE7A81F7B677900C3B028 /* remove_certificates_and_profiles.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = remove_certificates_and_profiles.sh; sourceTree = "<group>"; };
 		846CE7A91F7B677A00C3B028 /* deploy_hockeyapp.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = deploy_hockeyapp.sh; sourceTree = "<group>"; };
+		846CE7AA1F7B6F7400C3B028 /* apple.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = apple.cer; sourceTree = "<group>"; };
+		846CE7AB1F7B6F7400C3B028 /* dist.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = dist.cer; sourceTree = "<group>"; };
+		846CE7AC1F7B6F7500C3B028 /* dist.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dist.p12; sourceTree = "<group>"; };
 		8A1156C4935300E1044D8D26 /* Pods-CircleCIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleCIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircleCIUITests/Pods-CircleCIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		96E71E514BEB193CA0E2ABEB /* Pods_CircleCITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA17E52DC7015F778F8ED26D /* Pods_CircleCI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircleCI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +101,9 @@
 				846CE7A91F7B677A00C3B028 /* deploy_hockeyapp.sh */,
 				846CE7A71F7B677900C3B028 /* install_certificates_and_profiles.sh */,
 				846CE7A81F7B677900C3B028 /* remove_certificates_and_profiles.sh */,
+				846CE7AA1F7B6F7400C3B028 /* apple.cer */,
+				846CE7AB1F7B6F7400C3B028 /* dist.cer */,
+				846CE7AC1F7B6F7500C3B028 /* dist.p12 */,
 				840DA09D1F7A7C44002A73D4 /* CircleCI */,
 				840DA0B21F7A7C44002A73D4 /* CircleCITests */,
 				840DA0BD1F7A7C44002A73D4 /* CircleCIUITests */,
