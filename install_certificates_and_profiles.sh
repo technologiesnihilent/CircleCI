@@ -25,6 +25,7 @@
 
 # set password for ios-build.keychain
 KEYCHAIN_PASSWORD=circleci
+KEY_PASSWORD=circleci
 
 # create ios-build.keychain with $KEYCHAIN_PASSWORD
 security create-keychain -p $KEYCHAIN_PASSWORD ios-build.keychain
@@ -41,4 +42,4 @@ security unlock-keychain -p $KEYCHAIN_PASSWORD ~/Library/Keychains/ios-build.key
 
 # install provisioning profiles to system
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-cp ./scripts/CircleCI/profile/* ~/Library/MobileDevice/Provisioning\ Profiles/
+cp ./profile/* ~/Library/MobileDevice/Provisioning\ Profiles/
