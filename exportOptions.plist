@@ -4,5 +4,10 @@
 <dict>
 	<key>method</key>
 	<string>ad-hoc</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.nihilent.Wildcard.CircleCI</key>
+		<string>Wildcard_Dist</string>
+	</dict>
 </dict>
 </plist>
