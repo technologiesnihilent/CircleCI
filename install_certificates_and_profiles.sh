@@ -18,27 +18,27 @@
 #        Mobile Provisioning Profiles for the project being deployed are installed from
 #            ./scripts/CircleCI/profile/
 #
-# Certificates are imported into a temporary keychain, ios-build.keychain, locked with
+# Certificates are imported into a temporary keychain, circle.keychain, locked with
 #     the password $KEYCHAIN_PASSWORD
 #
 #==========================================================================================
 
-# set password for ios-build.keychain
+# set password for circle.keychain
 KEYCHAIN_PASSWORD=circleci
 KEY_PASSWORD=circleci
 
-# create ios-build.keychain with $KEYCHAIN_PASSWORD
-security create-keychain -p $KEYCHAIN_PASSWORD ios-build.keychain
-# import Apple Worldwide Developer Relations Certification Authority to ios-build.keychain
-security import ./apple.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
-# import iOS distribution certificate to ios-build.keychain
-security import ./dist.cer -k ~/Library/Keychains/ios-build.keychain -T /usr/bin/codesign
-# import iOS distribution private key to ios-build.keychain
-security import ./dist.p12 -k ~/Library/Keychains/ios-build.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
+# create circle.keychain with $KEYCHAIN_PASSWORD
+security create-keychain -p $KEYCHAIN_PASSWORD circle.keychain
+# import Apple Worldwide Developer Relations Certification Authority to circle.keychain
+security import ./apple.cer -k ~/Library/Keychains/circle.keychain -T /usr/bin/codesign
+# import iOS distribution certificate to circle.keychain
+security import ./dist.cer -k ~/Library/Keychains/circle.keychain -T /usr/bin/codesign
+# import iOS distribution private key to circle.keychain
+security import ./dist.p12 -k ~/Library/Keychains/circle.keychain -P $KEY_PASSWORD -T /usr/bin/codesign
 # load the keychain
-security list-keychain -s ~/Library/Keychains/ios-build.keychain
+security list-keychain -s ~/Library/Keychains/circle.keychain
 # unlock keychain with $KEYCHAIN_PASSWORD
-security unlock-keychain -p $KEYCHAIN_PASSWORD ~/Library/Keychains/ios-build.keychain
+security unlock-keychain -p $KEYCHAIN_PASSWORD ~/Library/Keychains/circle.keychain
 
 # install provisioning profiles to system
 mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
