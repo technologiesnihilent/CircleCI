@@ -20,3 +20,12 @@ test:
         clean build test |
       tee $CIRCLE_ARTIFACTS/xcode_raw.log |
       xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+deployment:
+  hockey:
+    branch: [dev, master]
+    commands:
+      - ./scripts/CircleCI/install_certificates_and_profiles.sh
+      - xcodebuild archive -workspace CircleCI.xcworkspace -scheme CircleCI -archivePath CircleCI.xcarchive
+      - xcodebuild -exportArchive -archivePath CircleCI.xcarchive -exportPath ./ -exportFormat ipa -exportProvisioningProfile "Wildcard_Dist.mobileprovision"
+      - ./scripts/CircleCI/remove_certificates_and_profiles.sh
+      - ./scripts/CircleCI/deploy_hockeyapp.sh
