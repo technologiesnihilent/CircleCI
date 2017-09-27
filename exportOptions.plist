@@ -4,6 +4,8 @@
 <dict>
 	<key>method</key>
 	<string>ad-hoc</string>
+	<key>compileBitcode</key>
+	<false/>
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.nihilent.Wildcard.CircleCI</key>
