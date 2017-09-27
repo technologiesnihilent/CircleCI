@@ -26,5 +26,9 @@ deployment:
   hockey:
     branch: [dev, master]
     commands:
-      - gym
+      - ./install_certificates_and_profiles.sh
+      - xcodebuild archive -workspace CircleCI.xcworkspace -scheme CircleCI -archivePath CircleCI.xcarchive
+          timeout: 1200 # note the double indentation (four spaces) here
+      - xcodebuild -exportArchive -archivePath CircleCI.xcarchive -exportPath ./ -exportFormat ipa -exportProvisioningProfile "Wildcard_Dist.mobileprovision"
+      - ./remove_certificates_and_profiles.sh
       - ./deploy_hockeyapp.sh
