@@ -58,8 +58,9 @@ curl --verbose \
      --form "notify=${CURL_NOTIFY}" \
      --form "notes=${HOCKEYAPP_NOTES}" \
      --form "notes_type=1" \
-     --form "ipa=@${HOCKEYAPP_EXPORT_IPA_PATH}" \
+     --form "ipa=@/Users/distiller/CircleCI/CircleCI.ipa" \
      --form "tags=${CURL_TAGS}" \
      --form "release_type=2" \
      --header "X-HockeyAppToken: ${HOCKEYAPP_TOKEN}" \
-     "https://upload.hockeyapp.net/api/2/apps/${HOCKEYAPP_APP_IDENTIFIER}/app_versions/upload"
+"https://rink.hockeyapp.net/api/2/apps/${HOCKEYAPP_APP_IDENTIFIER}/app_versions"
+
