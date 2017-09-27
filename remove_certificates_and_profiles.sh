@@ -9,6 +9,6 @@
 #
 #==========================================================================================
 
-# delete temporary ios-build.keychain and remove install system provisioning profiles
-security delete-keychain ios-build.keychain
+# delete temporary circle.keychain and remove install system provisioning profiles
+security delete-keychain circle.keychain
 rm -f ~/Library/MobileDevice/Provisioning\ Profiles/*

@@ -28,6 +28,6 @@ deployment:
     commands:
       - ./install_certificates_and_profiles.sh
       - xcodebuild archive -workspace CircleCI.xcworkspace -scheme CircleCI -archivePath CircleCI.xcarchive
-      - xcodebuild -exportArchive -archivePath CircleCI.xcarchive -exportPath ./ -exportOptionsPlist exportOptions.plist
+      - xcodebuild -exportArchive -archivePath CircleCI.xcarchive -exportPath ./ -exportOptionsPlist exportOptions.plist -exportProvisioningProfile "Wildcard_Dist.mobileprovision"
       - ./remove_certificates_and_profiles.sh
       - ./deploy_hockeyapp.sh
