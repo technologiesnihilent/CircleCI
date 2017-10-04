@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
 
 #==========================================================================================
-# Originate iOS CircleCI Continuous Deployment
+# iOS Continuous Deployment
 # deploy_hockeyapp.sh
 #
 # This script uploads an exported .ipa file for RedditFeed app to Hockeyapp using
 #    HockeyAppToken : $HOCKEYAPP_TOKEN
-#    Team ID        : $HOCKEYAPP_TEAM_ID
-#    Notes          : $HOCKEYAPP_VERSION_NOTES
+#    Notes          : $HOCKEYAPP_NOTES
 #    ipa            : $HOCKEYAPP_EXPORT_IPA_PATH
 #    App            : $HOCKEYAPP_APP_IDENTIFIER
 #    tags           : $HOCKEYAPP_TAGS
@@ -25,7 +24,6 @@
 # notes_type=0    # for Textile
 # ipa             # .ipa export path set in the circle.yml
 # tags            # app tag
-# teams           # team number
 # release_type=2  # for alpha, change to 3 for enterprise
 # X-HockeyAppToken: token of app owner
 

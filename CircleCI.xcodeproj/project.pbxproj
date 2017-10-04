@@ -93,7 +93,6 @@
 		840DA0921F7A7C44002A73D4 = {
 			isa = PBXGroup;
 			children = (
-				846CE7AD1F7B716700C3B028 /* profile */,
 				840DA0CC1F7A7CA6002A73D4 /* circle.yml */,
 				846CE7A91F7B677A00C3B028 /* deploy_hockeyapp.sh */,
 				846CE7AF1F7B8FF800C3B028 /* exportOptions.plist */,
@@ -144,13 +143,6 @@
 				840DA0C01F7A7C44002A73D4 /* Info.plist */,
 			);
 			path = CircleCIUITests;
-			sourceTree = "<group>";
-		};
-		846CE7AD1F7B716700C3B028 /* profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = profile;
 			sourceTree = "<group>";
 		};
 		FF316D7D3C6C1ED207FF7029 /* Frameworks */ = {
