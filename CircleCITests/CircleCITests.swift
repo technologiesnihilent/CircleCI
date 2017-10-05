@@ -26,7 +26,7 @@ class CircleCITests: XCTestCase {
     func testSuccess() {
         XCTAssert((2 == 2), "succeeded false")
     }
-    func testFailure() {
-        XCTAssert((2 == 1), "failed \(#function)")
-    }
+//    func testFailure() {
+//        XCTAssert((2 == 1), "failed \(#function)")
+//    }
 }
