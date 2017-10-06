@@ -22,11 +22,10 @@ class CircleCITests: XCTestCase {
     }
     
 //sample unit test
-    
     func testSuccess() {
         XCTAssert((2 == 2), "test succeeded")
     }
-    func testFailure() {
-        XCTAssert((2 == 1), "test failed \(#function)")
-    }
+//    func testFailure() {
+//        XCTAssert((2 == 1), "test failed \(#function)")
+//    }
 }
